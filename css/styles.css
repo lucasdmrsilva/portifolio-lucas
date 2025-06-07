@@ -103,6 +103,10 @@ p {
     text-decoration: none;
 }
 
+.icons-socias .instagram {
+    border-radius: 100%;
+}
+
 /* apresentação */
 #apresentacao {
     margin: 100px 0;
@@ -228,7 +232,6 @@ p {
 }
 
 /* projetos */
-
 .info-projetos {
     display: flex;
     gap: 30px;
@@ -244,7 +247,14 @@ p {
     border-radius: 20px;
 }
 
-
+.imagem-projetos {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
 
 .info-card-projetos {
     flex: 1;
@@ -520,6 +530,10 @@ footer {
     gap: 30px;
 }
 
+.container-right-footer a {
+    text-decoration: none;
+}
+
 .numero-footer,
 .email-footer,
 .copyright {
@@ -624,7 +638,7 @@ footer {
     .cards-projetos {
         max-width: 400px;
     }
-
+    
     /* Footer */
     .footer-projetos {
         flex-direction: column;

@@ -133,7 +133,7 @@ function scrollToSection(sectionId){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    const links = document.querySelectorAll("nav a");
+    const links = document.querySelectorAll("nav a[href^='#']");
     links.forEach(function (link) {
         link.addEventListener("click", function(e){
             e.preventDefault();
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function(){
             scrollToSection(sectionId);
         })
     })
-    const footerLinks = document.querySelectorAll("footer a");
+    const footerLinks = document.querySelectorAll("footer a[href^='#']");
     footerLinks.forEach(function (link) {
         link.addEventListener("click", function(e){
             e.preventDefault();
